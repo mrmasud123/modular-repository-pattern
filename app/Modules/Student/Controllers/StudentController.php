@@ -3,8 +3,11 @@
 namespace App\Modules\Student\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Modules\Student\Models\Student;
+use App\Modules\Student\Resources\StudentResource;
 use App\Modules\Student\Services\StudentService;
 use Illuminate\Http\Request;
+use Str;
 
 class StudentController extends Controller
 {
@@ -14,6 +17,11 @@ class StudentController extends Controller
     }
     public function index()
     {
-        return $this->studentService->getAllStudents();
+
+        return response()->json([
+            Str::app_name('student module'),
+            StudentResource::collection(Student::all())
+        ]);
+        // return $this->studentService->getAllStudents();
     }
 }
