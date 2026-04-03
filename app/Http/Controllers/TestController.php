@@ -17,6 +17,8 @@ class TestController extends Controller
         return [
             $this->payment->pay('bkash',1000),
             $this->payment->pay('nagad', 2000)
+            
+            /* Masud rana */
         ];
     }
     
