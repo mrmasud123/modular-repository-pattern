@@ -26,6 +26,5 @@ class TestController extends Controller
     
     public function submit(Request $request){
         return $request->input();
-        return $request->input();
     }
 }
