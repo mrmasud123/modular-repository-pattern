@@ -14,6 +14,9 @@
         <input type="text" name="password" placeholder="Password"><br>
         
         <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
